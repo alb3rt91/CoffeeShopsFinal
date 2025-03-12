@@ -1,0 +1,118 @@
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/motion_scene"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Comentarios"
+        android:titleTextColor="#FFFFFF"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Opiniones de clientes"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Flow para organizar las tarjetas -->
+
+
+    <!-- Tarjetas de comentarios -->
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        app:constraint_referenced_ids="textView1,textView2,textView3,textView4,textView5"
+        app:flow_firstHorizontalStyle="packed"
+        app:flow_firstVerticalStyle="spread"
+        app:flow_horizontalGap="16dp"
+        app:flow_verticalGap="16dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewHeader" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:background="@drawable/button_bg"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:text="Muy recomendable. Volveré seguro"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:background="@drawable/button_bg"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:text="Acogedor. Muy buen ambiente"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:background="@drawable/button_bg"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:text="Buenos precios"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:background="@drawable/button_bg"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:text="Servicio algo flojo"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:background="@drawable/button_bg"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:text="Para repetir... extensa carta de cafés"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.CoffeeShops.Material" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
