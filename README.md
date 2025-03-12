@@ -17,7 +17,7 @@ La aplicación **CoffeeShops** muestra una lista de cafeterías ficticias y perm
 ## Instalación
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/alb3rt91/coffeeshops.git
+   git clone https://github.com/alb3rt91/CoffeeShopsFinal.git
    ```
 
 2. Abre el proyecto en **Android Studio**.
@@ -30,7 +30,10 @@ La aplicación **CoffeeShops** muestra una lista de cafeterías ficticias y perm
 
 - **MainActivity**: La actividad principal que muestra la lista de cafeterías.
 - **SecondActivity**: La actividad secundaria que muestra el nombre de la cafetería seleccionada.
-- **Adaptadores**: Se utiliza un adaptador personalizado para gestionar los elementos del `RecyclerView`.
+- **OnboardingActivity**: La actividad que muestra el asistente de instalación (onboarding) al usuario la primera vez que inicia la aplicación.
+- **Adaptadores**: 
+  - Se utiliza un adaptador personalizado (CoffeeShopAdapter) para gestionar los elementos del RecyclerView en MainActivity.
+  - Se utiliza un adaptador (OnboardingAdapter) para gestionar las pantallas del asistente de instalación en OnboardingActivity.
 
 ## Estrategia de Pruebas
 
